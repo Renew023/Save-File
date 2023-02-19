@@ -1,3 +1,5 @@
+window.alert("ㅋㅋ");
+
 function clickCounter() {
       if (typeof(Storage) !== "undefined") {
         if (localStorage.clickcount) {
