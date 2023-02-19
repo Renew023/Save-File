@@ -3,7 +3,22 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="sss.css"> 
-    <script src="Java.js"></script> 
+    <script>
+    window.alert("ㅋㅋ");
+
+function clickCounter() {
+      if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)+1;
+          } else {
+            localStorage.clickcount = 1;
+          }
+        document.getElementById("result").innerHTML = "You have clicked the button" + localStorage.clickcount + " time(s).";
+      } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+      }
+    }
+    </script> 
   </head>
   
   <body class ="box">
